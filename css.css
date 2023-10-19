@@ -10,13 +10,12 @@
 nav {
     font-family: Montserrat;
     width: 100%;
-    background-color: transparent;
     display: flex;
     justify-content: flex-start;
     align-items: flex-start;
-    position: sticky; /* Make the navigation bar sticky */
-    top: 0; /* Stick it at the top of the viewport */
-    z-index: 100; /* Ensure it's above other elements */
+    position: sticky; 
+    top: 0; 
+    z-index: 100;
 }
 
 
@@ -48,7 +47,7 @@ section {
 
 section.one {
   background-color: #FFF6EB;
-  min-height: 100vh; /* Set a minimum height */
+  min-height: 100vh; 
 }
 
 
@@ -195,9 +194,9 @@ section.one {
 }
 
 .read-more-button {
-  position: absolute; /* Set button position to absolute */
+  position: absolute; 
   top: 95px;  
-  right: 10px; /* Adjust the distance from the right */
+  right: 10px; 
   display: inline-block;
   font-family: Montserrat;
   background-color: #FFC5C4;
@@ -346,21 +345,21 @@ section.one {
 .cirkel-parent {
   display: flex;
   align-items: center;
-  margin-bottom: 20px; /* Add spacing between cirkels */
+  margin-bottom: 20px; 
 }
 
 .cirkel img {
   display: absolute;
   width: 70px;
-  height: 60px; /* Make the cirkel same size as the text */
-  margin-right: 10px; /* Add spacing between cirkel and text */
+  height: 60px; 
+  margin-right: 10px; 
   left: 0;
 }
 
 
 
 .text {
-  flex: 1; /* Allow the text to fill available space */
+  flex: 1; /* det med teksten kom ved siden af teksten */
 }
 
 
