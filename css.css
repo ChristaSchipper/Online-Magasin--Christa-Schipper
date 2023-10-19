@@ -1,0 +1,401 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    outline: none;
+    border: none;
+}
+
+/*---------- Navigation bar + logo---------- */
+nav {
+    font-family: Montserrat;
+    width: 100%;
+    background-color: transparent;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    position: sticky; /* Make the navigation bar sticky */
+    top: 0; /* Stick it at the top of the viewport */
+    z-index: 100; /* Ensure it's above other elements */
+}
+
+
+.logo {
+    padding: -2px 2rem;   
+}
+
+
+nav a {
+    text-decoration: none;
+    color: #BE8F23;
+    padding: 0 1.5rem;
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+
+/*---------- Page sections---------- */
+
+section {
+    height: 100vh;
+    width: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/*---------- Section one ---------- */
+
+section.one {
+  background-color: #FFF6EB;
+  min-height: 100vh; /* Set a minimum height */
+}
+
+
+.container1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: 95vh;
+    padding: 3rem;
+}
+
+.column-left {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    color: black;
+    padding: 0rem 2rem;
+}
+
+.column-left h1 {
+  font-family: Arial, Helvetica, sans-serif;
+    margin-bottom: 1rem;
+    font-size: 3rem;
+    color:#BE8F23
+}
+
+.column-left p {
+  font-family: Arial, Helvetica, sans-serif;
+    margin-bottom: 2rem;
+    font-size: 1.5rem;
+    line-height: 1.5;
+    color: #BE8F23;
+}
+
+.column-right {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    padding: 0rem 2rem
+}
+
+.img-woman {
+    width: 50%;
+    height: 70%;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+
+/*---------- Section two ---------- */
+.new-page1 {
+  background-color: #F88E69;
+  position: relative;
+  width: auto;
+  height: 100vh;
+}
+
+.grunde-container {
+  position: relative;
+  width: 50vh;
+  height: 50vh;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.venstre-container {
+  font-family: Arial, Helvetica, sans-serif;
+
+}
+
+.kunst {
+  position: relative;
+  width: 40vh;
+  height: 50vh;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/*---------- Section three ---------- */
+.new-page2 {
+  background-color: #FFC5C4;
+  position: relative;
+  width: auto;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 25px;
+}
+
+.card {
+  position: relative;
+  width: 50vh;
+  height: 50vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border: 2px solid #c4992d;
+  border-radius: 0;
+  overflow: hidden;
+  margin: 10px;
+  background-color: orange;
+}
+
+.card-main {
+
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 15px 0;
+}
+
+.half-image, .half-text {
+  font-family: Montserrat;
+  width: 50%;
+  text-align: center;
+  position: relative;
+}
+
+.half-image img {
+  max-width: 100%;
+  height: auto;
+}
+
+.main-description p {
+  font-family: Montserrat;
+  color: #ffffff;
+  font-size: 12px;
+  text-align: center;
+}
+
+.read-more-button {
+  position: absolute; /* Set button position to absolute */
+  top: 95px;  
+  right: 10px; /* Adjust the distance from the right */
+  display: inline-block;
+  font-family: Montserrat;
+  background-color: #FFC5C4;
+  color: rgb(0, 0, 0);
+  padding: 5px 10px;
+  border-radius: 20px;
+  text-decoration: none;
+  font-size: x-small;
+  margin-top: 10px;
+  text-align: center;
+  transition: background-color 0.3s;
+}
+
+.read-more-button:hover {
+  background-color: #F88E69;
+}
+
+
+/*---------- Side 2 / tegn siden---------- */
+
+.frame {
+  position: relative;
+  background-color: #ebcc54;
+  width: auto;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: left;
+  font-size: var(--font-size-6xl);
+}
+
+
+.frame {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 25px;
+}
+
+/*---------- Hvid container ---------- */
+
+.hvid-sky-icon {
+  position: absolute;
+  top: 140px;
+  left: 60px;
+  border-radius: 20px;
+  width: 500px;
+  height: 283px;
+  letter-spacing: 0.09em;
+  display: flex;
+  align-items: center;
+}
+
+
+.tegn-dig-selv-container {
+  position: absolute;
+  top: 50px;
+  left: 76px;
+  display: flex;
+  align-items: center;
+  width: 413px;
+  height: 283px;
+  font-size: 40px;
+  color: #BE8F23;
+  font-family: Montserrat;
+}
+
+.grounding-processen-kan-container {
+  position: absolute;
+  top: 38px;
+  left: 76px;
+  letter-spacing: 0.09em;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: 450px;
+  height: 527px;
+  font-family: Montserrat;
+  font-weight: 400;
+}
+
+/*---------- Lyserød container ---------- */
+
+.lyserd-sky-icon {
+  position: absolute;
+  top: 348px;
+  left: 378px;
+  border-radius: 20px;
+  width: 349px;
+  height: 134px;
+}
+
+.det-skal-du-container {
+  position: absolute;
+  top: 348px;
+  left: 378px;
+  border-radius: 20px;
+  width: 349px;
+  height: 134px;
+  letter-spacing: 0.09em;
+  display: flex;
+  align-items: center;
+}
+
+
+.det-skal-du {
+  margin-block-start: 0;
+  margin-block-end: 11.58px;
+  font-weight: 600;
+  position: absolute;
+  top: 331px;
+  left: 370px;
+  border-radius: 20px;
+  width: 34px;
+  height: 179px;
+}
+
+.brugsanvisning {
+  font-weight: 500;
+  padding-left: 23px;
+  font-family: Montserrat;
+}
+
+/*---------- Højre box Fremgangsmåde ---------- */
+
+
+.fremgang {
+  position: absolute;
+  bottom: 372px;
+  width: 413px;
+  color: #FFF;
+  font-family: Montserrat;
+}
+
+.container-parent {
+  position: absolute;
+    top: 200px;
+    right: 291px;
+    width: 413px;
+    color: #FFF;
+    font-family: Montserrat;
+}
+
+.cirkel-parent {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px; /* Add spacing between cirkels */
+}
+
+.cirkel img {
+  display: absolute;
+  width: 70px;
+  height: 60px; /* Make the cirkel same size as the text */
+  margin-right: 10px; /* Add spacing between cirkel and text */
+  left: 0;
+}
+
+
+
+.text {
+  flex: 1; /* Allow the text to fill available space */
+}
+
+
+
+/*---------- Media queries ---------- */
+
+/* Media query for iPads */
+@media screen and (max-width: 1024px) {
+  
+  .container1 {
+      grid-template-columns: 1fr;
+  }
+  
+  .column-left, .column-right {
+      width: 100%;
+  }
+  
+  .img-woman {
+      width: auto;
+      height: auto;
+  }
+}
+
+/* Media query for larger screens */
+@media screen and (min-width: 1025px) {
+  .container1 {
+      grid-template-columns: 1fr 1fr;
+  }
+  
+  .column-left, .column-right {
+      width: auto;
+  }
+  
+  .img-woman {
+      width: 50%;
+      height: 70%;
+  }
+}
